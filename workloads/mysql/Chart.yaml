@@ -1,0 +1,9 @@
+apiVersion: v2
+type: application
+name: mysql
+version: 0.0.0
+appVersion: 0.0.0
+dependencies:
+  - name: mysql
+    repository: https://charts.jetstack.io
+    version: 8.7.0
