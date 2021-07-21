@@ -7,3 +7,4 @@ dependencies:
   - name: apache
     repository: https://charts.bitnami.com/bitnami
     version: 8.5.7
+
