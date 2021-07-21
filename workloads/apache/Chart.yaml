@@ -1,9 +1,9 @@
 apiVersion: v2
 type: application
-name: mysql
+name: apache
 version: 0.0.0
 appVersion: 0.0.0
 dependencies:
-  - name: mysql
+  - name: apache
     repository: https://charts.bitnami.com/bitnami
-    version: 8.7.0
+    version: 8.5.7

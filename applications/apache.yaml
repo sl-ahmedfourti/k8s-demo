@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   namespace: argocd
-  name: mysql
+  name: cert-manager
   # cascade deletes
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -13,15 +13,18 @@ spec:
   source:
     repoURL: https://github.com/sl-ahmedfourti/k8s-demo.git
     targetRevision: HEAD
-    path: workloads/mysql/
+    path: workloads/apache/
     helm:
-      releaseName: mysql
+      releaseName: apache
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: mysql
+    namespace: demo
 
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      Validate=false
+      CreateNamespace=true
