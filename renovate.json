@@ -4,6 +4,16 @@
     "config:base",
     ":semanticCommits"
   ],
+  "enabledManagers": [
+      "regex"
+    ],
+    "packageRules": [
+      {
+        "managers": [
+          "regex"
+        ]
+      }
+    ],
   "regexManagers": [
     {
       "fileMatch": ["config\\.yml$"],
