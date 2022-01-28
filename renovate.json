@@ -1,3 +1,14 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":semanticCommits"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["config\\.yml$"],
+      "matchStrings": ["chartVersion:\\s*(?<currentValue>.*?)\\s*chartName:\\s*(?<depName>.*?)\\s*repoURL:\\s*(?<registryUrl>.*?)\\s|$"],
+      "datasourceTemplate": "helm"
+    }
+  ]
 }
