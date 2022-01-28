@@ -6,7 +6,7 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["config\\.yml$"],
+      "fileMatch": ["config\\.yaml$"],
       "matchStrings": ["chartVersion:\\s*(?<currentValue>.*?)\\s*chartName:\\s*(?<depName>.*?)\\s*repoURL:\\s*(?<registryUrl>.*?)\\s|$"],
       "datasourceTemplate": "helm"
     }
