@@ -7,8 +7,7 @@
   "regexManagers": [
     {
       "fileMatch": ["\\.yaml$"],
-      "matchStrings": ["^  ([^ :]*):\n(?:(?:    chartVersion: ((?<currentValue>.*?))\n)|(?:    chartName: ((?<depName>.*?))\n)|(?:    repoURL: ((?<registryUrl>.*?))\n)|(?:    [^ ].*)\n)* "],
+      "matchStrings": ["^  ([^ :]*):\\n(?:(?:    chartVersion: ((?<currentValue>.*?))\\n)|(?:    chartName: ((?<depName>.*?))\\n)|(?:    repoURL: ((?<registryUrl>.*?))\\n)|(?:    [^ ].*)\\n)* "],
       "datasourceTemplate": "helm"
     }
   ]
-}
