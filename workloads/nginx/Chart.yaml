@@ -6,5 +6,5 @@ appVersion: 0.0.0
 dependencies:
   - name: nginx
     repository: https://charts.bitnami.com/bitnami
-    version: 9.3.8
+    version: 9.7.5
 

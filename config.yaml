@@ -1,0 +1,29 @@
+applications:
+  aws-load-balancer-controller:
+    namespace: infra-alb-ingress
+    project: ops-central
+    repoURL: https://aws.github.io/eks-charts
+    chartName: aws-load-balancer-controller
+    chartVersion: 1.3.2
+    releaseName: aws-load-balancer-controller
+  external-dns:
+    namespace: infra-external-dns
+    project: ops-central
+    repoURL: https://charts.bitnami.com/bitnami
+    chartName: external-dns
+    chartVersion: 6.1.2
+    releaseName: external-dns
+  external-secret:
+    namespace: infra-external-secret
+    project: ops-central
+    repoURL: https://external-secrets.github.io/kubernetes-external-secrets
+    chartName: kubernetes-external-secrets
+    chartVersion: 8.5.1
+    releaseName: external-secret
+  metrics-server:
+    namespace: infra-metrics-server
+    project: ops-central
+    repoURL: https://charts.bitnami.com/bitnami
+    chartName: metrics-server
+    chartVersion: 5.10.14
+    releaseName: metrics-server
