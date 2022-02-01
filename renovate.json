@@ -4,6 +4,7 @@
     "config:base",
     ":semanticCommits"
   ],
+  "enabledManagers": ["regex"],
   "regexManagers": [
     {
       "fileMatch": ["config\\.yaml$"],
