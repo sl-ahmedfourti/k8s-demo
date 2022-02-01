@@ -6,5 +6,5 @@ appVersion: 0.0.0
 dependencies:
   - name: apache
     repository: https://charts.bitnami.com/bitnami
-    version: 8.12.1
+    version: 9.0.1
 
