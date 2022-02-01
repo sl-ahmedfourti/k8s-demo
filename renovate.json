@@ -8,7 +8,7 @@
     {
       "fileMatch": ["config\\.yaml$"],
       "matchStrings": ["^  ([^ :]*):\\n(?:(?:    chartVersion: (?<currentValue>.*?)\\n)|(?:    chartName: (?<depName>.*?)\\n)|(?:    repoURL: (?<registryUrl>.*?)\\n)|(?:    [^ ].*)\\n)*"],
-      "datasource": "helm"
+      "datasourceTemplate": "helm"
     }
   ]
 }
