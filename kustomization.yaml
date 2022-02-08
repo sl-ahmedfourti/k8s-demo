@@ -1,0 +1,11 @@
+# Order is important, very important !
+resources:
+  - https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.4/manifests/ha/install.yaml
+  - argocd/projects/opscentral.yaml
+  - argocd/applications/overlay/in-cluster
+
+patchesStrategicMerge:
+  - argocd/patch/argocd-application-controller-statefulset.yaml
+  - argocd/patch/argocd-cm.yaml
+  - argocd/patch/argocd-server-deployment.yaml
+  - argocd/patch/argocd-server-service.yaml
