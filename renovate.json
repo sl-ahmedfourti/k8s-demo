@@ -12,7 +12,6 @@
       "datasourceTemplate": "helm"
     }
   ],
-  ,
   "kustomize": {
     "fileMatch": ["kustomization\\.yaml$"]
   }
