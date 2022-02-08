@@ -1,3 +1,4 @@
+kind: Kustomization
 # Order is important, very important !
 resources:
   - https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.4/manifests/ha/install.yaml
